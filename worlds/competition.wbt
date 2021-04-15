@@ -58,4 +58,8 @@ WoodenBox {
 }
 DEF PARTICIPANT_ROBOT TiagoBase {
   translation -4.5 0.095 -4.5
+  lidarSlot [
+    HokuyoUrg04lxug01 {
+    }
+  ]
 }
