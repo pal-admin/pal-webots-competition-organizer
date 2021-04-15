@@ -16,7 +16,7 @@
 
 from controller import Supervisor
 
-MAXIMUM_TIME = 60
+MAXIMUM_TIME = 60*1000
 SPENT_TIME = 0
 MAXIMUM_POINTS = 9+9
 NEGATIVE_POINTS = MAXIMUM_POINTS
@@ -36,7 +36,7 @@ while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
         NEGATIVE_POINTS = 0
         break
     NEGATIVE_POINTS = min(NEGATIVE_POINTS, manh_dist)
-    SPENT_TIME += 1
+    SPENT_TIME += timestep
 
 points = (MAXIMUM_POINTS - NEGATIVE_POINTS)*(70/MAXIMUM_POINTS) + (MAXIMUM_TIME - SPENT_TIME)*(30/MAXIMUM_TIME)
 
