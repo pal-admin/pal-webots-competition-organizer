@@ -20,34 +20,18 @@ from controller import Supervisor
 referee = Supervisor()
 timestep = int(referee.getBasicTimeStep())
 
-robot0_node = referee.getFromDef('R0')
-robot1_node = referee.getFromDef('R1')
+robot_node = referee.getFromDef('PARTICIPANT_ROBOT')
 emitter = referee.getDevice('emitter')
 
-winner = None
-points0 = None
-points1 = None
+points = None
 
 while referee.step(timestep) != -1:
-    altitude0 = robot0_node.getPosition()[1]
-    altitude1 = robot1_node.getPosition()[1]
-
-    if altitude0 < 0.04:
-        winner = 1
-        points0 = -referee.getTime()
-        points1 = 0
-        break
-
-    if altitude1 < 0.04:
-        winner = 0
-        points0 = 0
-        points1 = -referee.getTime()
-        break
+    points = robot_node.getPosition()[1]
+    break
 
 # Store the results
 with open('/tmp/results.txt', 'w') as f:
-    f.write(f'winner: {winner}\n')
-    f.write(f'points: {points0}, {points1}\n')
+    f.write(f'points: {points}\n')
 
 # We want to see the fall :)
 referee.step(20 * timestep)
