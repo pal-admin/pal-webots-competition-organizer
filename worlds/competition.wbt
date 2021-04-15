@@ -62,6 +62,7 @@ DEF PARTICIPANT_ROBOT TiagoBase {
     HokuyoUrg04lxug01 {
     }
   ]
+  controller "participant_controller"
 }
 Robot {
   children [
