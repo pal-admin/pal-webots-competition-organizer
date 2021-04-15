@@ -16,6 +16,13 @@
 
 from controller import Supervisor
 
+MAXIMUM_TIME = 60*1000
+SPENT_TIME = 0
+MAXIMUM_POINTS = 9+9
+NEGATIVE_POINTS = MAXIMUM_POINTS
+GOAL_X = 4.5
+GOAL_Z = 4.5
+EPS = 0.2
 
 referee = Supervisor()
 timestep = int(referee.getBasicTimeStep())
@@ -23,11 +30,15 @@ timestep = int(referee.getBasicTimeStep())
 robot_node = referee.getFromDef('PARTICIPANT_ROBOT')
 emitter = referee.getDevice('emitter')
 
-points = None
+while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
+    manh_dist = GOAL_X - robot_node.getPosition()[0] + GOAL_Z - robot_node.getPosition()[2] 
+    if manh_dist < EPS:
+        NEGATIVE_POINTS = 0
+        break
+    NEGATIVE_POINTS = min(NEGATIVE_POINTS, manh_dist)
+    SPENT_TIME += timestep
 
-while referee.step(timestep) != -1:
-    points = robot_node.getPosition()[1]
-    break
+points = (MAXIMUM_POINTS - NEGATIVE_POINTS)*(70/MAXIMUM_POINTS) + (MAXIMUM_TIME - SPENT_TIME)*(30/MAXIMUM_TIME)
 
 # Store the results
 with open('/tmp/results.txt', 'w') as f:
