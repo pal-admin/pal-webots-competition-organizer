@@ -1,2 +1,3 @@
-https://github.com/cyberbotics/webots-competition-competitor-template
-https://github.com/cyberbotics/webots-competition-competitor-template
+https://github.com/cesc-folch/pal-webots-competition-participant
+https://github.com/cesc-folch/pal-webots-competition-participant
+https://github.com/cesc-folch/pal-webots-competition-participant
