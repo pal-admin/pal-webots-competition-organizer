@@ -63,3 +63,13 @@ DEF PARTICIPANT_ROBOT TiagoBase {
     }
   ]
 }
+Robot {
+  children [
+    Emitter {
+      channel 1024
+    }
+  ]
+  locked TRUE
+  controller "contest_manager"
+  supervisor TRUE
+}
