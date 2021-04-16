@@ -55,6 +55,36 @@ WoodenBox {
   name "wooden box(8)"
   size 1 1 0.4
 }
+WoodenBox {
+  translation 1.5 -3.5 0.2
+  name "wooden box(9)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 0.5 -3.5 0.2
+  name "wooden box(10)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -0.5 -3.5 0.2
+  name "wooden box(11)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -1.5 -3.5 0.2
+  name "wooden box(12)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -2.5 -3.5 0.2
+  name "wooden box(13)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -4.5 -3.5 0.2
+  name "wooden box(14)"
+  size 1 1 0.4
+}
 DEF PARTICIPANT_ROBOT TiagoBase {
   translation -4.5 -4.5 0.095
   rotation 1 0 0 0
@@ -76,31 +106,31 @@ Robot {
   supervisor TRUE
 }
 DEF POI_1 Transform {
-  translation -4.5 -4.5 0
+  translation 4.5 -4.5 0
 }
 DEF POI_2 Transform {
-  translation -3.5 -3.5 0
+  translation 4.5 -3.5 0
 }
 DEF POI_3 Transform {
-  translation -2.5 -2.5 0
+  translation 4.5 -2.5 0
 }
 DEF POI_4 Transform {
-  translation -1.5 -1.5 0
+  translation 4.5 -1.5 0
 }
 DEF POI_5 Transform {
-  translation -0.5 -0.5 0
+  translation 4.5 -0.5 0
 }
 DEF POI_6 Transform {
-  translation 0.5 0.5 0
+  translation 4.5 0.5 0
 }
 DEF POI_7 Transform {
-  translation 1.5 1.5 0
+  translation 4.5 1.5 0
 }
 DEF POI_8 Transform {
-  translation 2.5 2.5 0
+  translation 4.5 2.5 0
 }
 DEF POI_9 Transform {
-  translation 3.5 3.5 0
+  translation 4.5 3.5 0
 }
 DEF POI_F Transform {
   translation 4.5 4.5 0

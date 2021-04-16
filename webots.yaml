@@ -1,2 +1,5 @@
 type: competition
-world: worlds/competition.wbt
+world: 
+  - worlds/competition.wbt
+  - worlds/competition2.wbt
+  - worlds/competition3.wbt
