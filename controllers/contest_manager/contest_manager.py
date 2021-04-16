@@ -41,18 +41,26 @@ while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
 
 points = 0
 for i in range(10):
+    poi_points = 0
     for j in range(10):
         if min_dist[i] < EPS*(j+1):
-            points += 1
-    print(points)
+            poi_points += 1
+    points += poi_points
+    id = str(i+1)
+    if i == 9:
+        id = "F"
+    print("POI_" + id + ": " + str(poi_points) + " points")
 
 final_dist = abs(poi_list[9].getPosition()[0] - robot_node.getPosition()[0]) + abs(poi_list[9].getPosition()[1] - robot_node.getPosition()[1])
 
+end_points = 0
 for j in range(10):
     if final_dist < EPS*(j+1):
-        points += 2
+        end_points += 2
+points += end_points
+print("Final position: " + str(end_points) + " points")
         
-print(points)
+print("Total: " + str(points) + " points")
 
 # Store the results
 with open('/tmp/results.txt', 'w') as f:
