@@ -16,7 +16,7 @@
 
 from controller import Supervisor
 
-MAXIMUM_TIME = 60*1000
+MAXIMUM_TIME = 3*60*1000
 SPENT_TIME = 0
 EPS = 0.2
 
