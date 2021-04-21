@@ -39,6 +39,7 @@ poi_list = [referee.getFromDef('POI_1'), referee.getFromDef('POI_2'),
             referee.getFromDef('POI_9'), referee.getFromDef('POI_F')]
             
 min_dist = [20]*10
+points = 0
 
 while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
     final_points = 0
@@ -61,27 +62,8 @@ while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
     point_value += final_points
     label += 'Final position: ' + str(final_points) + '\n'
     label += 'Total points: ' + str(point_value) + '\n'
+    points = point_value
     referee.setLabel(1, label, 0.15, 0.55, 0.05, 16777215, 0)
-
-points = 0
-for i in range(10):
-    poi_points = getPoints(min_dist[i])
-    points += poi_points
-    id = str(i+1)
-    if i == 9:
-        id = "F"
-    print("POI_" + id + ": " + str(poi_points) + " points")
-
-final_dist = abs(poi_list[9].getPosition()[0] - robot_node.getPosition()[0]) + abs(poi_list[9].getPosition()[1] - robot_node.getPosition()[1])
-
-end_points = 0
-for j in range(10):
-    if final_dist < EPS*(j+1):
-        end_points += 2
-points += end_points
-print("Final position: " + str(end_points) + " points")
-        
-print("Total: " + str(points) + " points")
 
 # Store the results
 with open('/tmp/results.txt', 'w') as f:
