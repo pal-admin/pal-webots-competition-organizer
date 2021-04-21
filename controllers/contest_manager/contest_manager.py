@@ -32,11 +32,13 @@ timestep = int(referee.getBasicTimeStep())
 
 robot_node = referee.getFromDef('PARTICIPANT_ROBOT')
 emitter = referee.getDevice('emitter')
-poi_list = [referee.getFromDef('POI_1'), referee.getFromDef('POI_2'),
-            referee.getFromDef('POI_3'), referee.getFromDef('POI_4'),
-            referee.getFromDef('POI_5'), referee.getFromDef('POI_6'),
-            referee.getFromDef('POI_7'), referee.getFromDef('POI_8'),
-            referee.getFromDef('POI_9'), referee.getFromDef('POI_F')]
+
+poi_list = []
+poi_string_list = robot_node.getField('customData').getSFString().split()
+
+for i in range(10):
+    poi_element = [float(poi_string_list[2*i]), float(poi_string_list[2*i+1])]
+    poi_list.append(poi_element)
             
 min_dist = [20]*10
 points = 0
@@ -44,7 +46,7 @@ points = 0
 while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
     final_points = 0
     for i in range(10):
-        dist = abs(poi_list[i].getPosition()[0] - robot_node.getPosition()[0]) + abs(poi_list[i].getPosition()[1] - robot_node.getPosition()[1])
+        dist = abs(poi_list[i][0] - robot_node.getPosition()[0]) + abs(poi_list[i][1] - robot_node.getPosition()[1])
         if i == 9:
             final_points = 2*getPoints(dist)
         min_dist[i] = min(min_dist[i], dist)
