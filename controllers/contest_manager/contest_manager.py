@@ -20,6 +20,13 @@ MAXIMUM_TIME = 3*60*1000
 SPENT_TIME = 0
 EPS = 0.2
 
+def getPoints(dist):
+    poi_points = 0
+    for j in range(10):
+        if dist < EPS*(j+1):
+            poi_points += 1
+    return poi_points
+
 referee = Supervisor()
 timestep = int(referee.getBasicTimeStep())
 
@@ -34,17 +41,31 @@ poi_list = [referee.getFromDef('POI_1'), referee.getFromDef('POI_2'),
 min_dist = [20]*10
 
 while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
+    final_points = 0
     for i in range(10):
         dist = abs(poi_list[i].getPosition()[0] - robot_node.getPosition()[0]) + abs(poi_list[i].getPosition()[1] - robot_node.getPosition()[1])
+        if i == 9:
+            final_points = 2*getPoints(dist)
         min_dist[i] = min(min_dist[i], dist)
     SPENT_TIME += timestep
+    label = ''
+    point_value = 0
+    for i in range(10):
+        poi_ind = str(i+1)
+        if i == 9:
+            poi_ind = 'F'
+        poi_points = getPoints(min_dist[i])
+        point_value += poi_points
+        poi_label = 'POI_' + poi_ind + ': ' + str(poi_points) + '\n'
+        label += poi_label
+    point_value += final_points
+    label += 'Final position: ' + str(final_points) + '\n'
+    label += 'Total points: ' + str(point_value) + '\n'
+    referee.setLabel(1, label, 0.15, 0.55, 0.05, 16777215, 0)
 
 points = 0
 for i in range(10):
-    poi_points = 0
-    for j in range(10):
-        if min_dist[i] < EPS*(j+1):
-            poi_points += 1
+    poi_points = getPoints(min_dist[i])
     points += poi_points
     id = str(i+1)
     if i == 9:
