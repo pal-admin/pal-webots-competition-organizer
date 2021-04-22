@@ -15,15 +15,21 @@ RectangleArena {
   floorTileSize 2 2
   wallHeight 0.3
 }
+DEF BOXES Group {
+}
 DEF PARTICIPANT_ROBOT TiagoBase {
   translation -4.5 -4.5 0.095
   rotation 1 0 0 0
   controller "participant_controller"
+  customData "-4.5 4.5 -3.5 3.5 -2.5 2.5 -1.5 1.5 -0.5 0.5 0.5 -0.5 1.5 -1.5 2.5 -2.5 3.5 -3.5 4.5 -4.5"
+  bodySlot [
+    GPS {
+    }
+  ]
   lidarSlot [
     HokuyoUrg04lxug01 {
     }
   ]
-  customData "-4.5 4.5 -3.5 3.5 -2.5 2.5 -1.5 1.5 -0.5 0.5 0.5 -0.5 1.5 -1.5 2.5 -2.5 3.5 -3.5 4.5 -4.5"
 }
 Robot {
   children [
