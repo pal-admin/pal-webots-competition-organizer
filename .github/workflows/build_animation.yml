@@ -2,8 +2,8 @@ name: Record animation
 
 on:
   push:
-#  schedule:
-#    - cron:  '0 0 * * *'
+  schedule:
+    - cron:  '0 0 * * *'
 jobs:
   record:
     runs-on: ubuntu-latest
