@@ -15,8 +15,6 @@ RectangleArena {
   floorTileSize 2 2
   wallHeight 0.3
 }
-DEF BOXES Group {
-}
 DEF PARTICIPANT_ROBOT TiagoBase {
   translation -4.5 -4.5 0.095
   rotation 1 0 0 0

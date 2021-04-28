@@ -15,74 +15,70 @@ RectangleArena {
   floorTileSize 2 2
   wallHeight 0.3
 }
-DEF BOXES Group {
-  children [
-	WoodenBox {
-	  translation -3.5 -3.5 0.2
-	  name "wooden box(1)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 0.5 -3.5 0.2
-	  name "wooden box(3)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation -1.5 -1.5 0.2
-	  name "wooden box(6)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 2.5 -1.5 0.2
-	  name "wooden box(8)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation -3.5 0.5 0.2
-	  name "wooden box(9)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 0.5 0.5 0.2
-	  name "wooden box(11)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation -1.5 2.5 0.2
-	  name "wooden box(14)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 2.5 2.5 0.2
-	  name "wooden box(16)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation -3.5 4.5 0.2
-	  name "wooden box(17)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 0.5 4.5 0.2
-	  name "wooden box(19)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 4.5 4.5 0.2
-	  name "wooden box(21)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 4.5 0.5 0.2
-	  name "wooden box(23)"
-	  size 1 1 0.4
-	}
-	WoodenBox {
-	  translation 4.5 -3.5 0.2
-	  name "wooden box(25)"
-	  size 1 1 0.4
-	}
-  ]
+WoodenBox {
+  translation -3.5 -3.5 0.2
+  name "wooden box(1)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 0.5 -3.5 0.2
+  name "wooden box(3)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -1.5 -1.5 0.2
+  name "wooden box(6)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 2.5 -1.5 0.2
+  name "wooden box(8)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -3.5 0.5 0.2
+  name "wooden box(9)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 0.5 0.5 0.2
+  name "wooden box(11)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -1.5 2.5 0.2
+  name "wooden box(14)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 2.5 2.5 0.2
+  name "wooden box(16)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation -3.5 4.5 0.2
+  name "wooden box(17)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 0.5 4.5 0.2
+  name "wooden box(19)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 4.5 4.5 0.2
+  name "wooden box(21)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 4.5 0.5 0.2
+  name "wooden box(23)"
+  size 1 1 0.4
+}
+WoodenBox {
+  translation 4.5 -3.5 0.2
+  name "wooden box(25)"
+  size 1 1 0.4
 }
 DEF PARTICIPANT_ROBOT TiagoBase {
   translation -4.5 -4.5 0.095
