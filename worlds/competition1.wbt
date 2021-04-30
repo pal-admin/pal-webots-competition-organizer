@@ -1,5 +1,6 @@
 #VRML_SIM R2021a utf8
 WorldInfo {
+  basicTimeStep 16
 }
 Viewpoint {
   orientation -0.07014310927181039 -0.27421553562549283 -0.9591067637355639 3.867238837271412
@@ -35,6 +36,8 @@ Robot {
       channel 1024
     }
   ]
+  boundingObject Group {
+  }
   locked TRUE
   controller "contest_manager"
   supervisor TRUE

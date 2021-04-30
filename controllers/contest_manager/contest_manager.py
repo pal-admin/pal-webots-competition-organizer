@@ -32,6 +32,7 @@ timestep = int(referee.getBasicTimeStep())
 
 robot_node = referee.getFromDef('PARTICIPANT_ROBOT')
 emitter = referee.getDevice('emitter')
+touch_sensor = referee.getDevice('touch sensor')
 
 poi_list = []
 poi_string_list = robot_node.getField('customData').getSFString().split()
@@ -42,6 +43,8 @@ for i in range(10):
             
 min_dist = [20]*10
 points = 0
+
+touch_sensor.enable(timestep)
 
 while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
     final_points = 0

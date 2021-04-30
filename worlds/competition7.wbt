@@ -1,5 +1,6 @@
 #VRML_SIM R2021a utf8
 WorldInfo {
+  basicTimeStep 16
 }
 Viewpoint {
   orientation -0.07014310927181039 -0.27421553562549283 -0.9591067637355639 3.867238837271412
@@ -179,6 +180,7 @@ DEF PARTICIPANT_ROBOT TiagoBase {
   translation -4.5 -4.5 0.095
   rotation 1 0 0 0
   controller "participant_controller"
+  customData "1.5 -1.5 -1.5 1.5 1.5 1.5 -1.5 -1.5 4.5 4.5 4.5 -4.5 -4.5 4.5 0.5 4.5 4.5 0.5 -2.5 -2.5"
   bodySlot [
     GPS {
     }
@@ -187,7 +189,6 @@ DEF PARTICIPANT_ROBOT TiagoBase {
     HokuyoUrg04lxug01 {
     }
   ]
-  customData "1.5 -1.5 -1.5 1.5 1.5 1.5 -1.5 -1.5 4.5 4.5 4.5 -4.5 -4.5 4.5 0.5 4.5 4.5 0.5 -2.5 -2.5"
 }
 Robot {
   children [
@@ -195,6 +196,266 @@ Robot {
       channel 1024
     }
   ]
+  boundingObject Group {
+    children [
+      Transform {
+        translation -3.5 -3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 3.5 -3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -3.5 3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 3.5 3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -1.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 1.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -1.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 1.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 -1.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 -1.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 1.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 1.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -2.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 2.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -2.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 2.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 -2.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 -2.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 2.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 2.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -3.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -3.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 3.5 -0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 3.5 0.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 -3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 -3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation -0.5 3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+      Transform {
+        translation 0.5 3.5 0.2
+        children [
+          Box {
+            size 1 1 0.4
+          }
+        ]
+      }
+    ]
+  }
   locked TRUE
   controller "contest_manager"
   supervisor TRUE
