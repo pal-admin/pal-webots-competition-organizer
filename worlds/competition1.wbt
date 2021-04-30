@@ -35,9 +35,11 @@ Robot {
     Emitter {
       channel 1024
     }
+    TouchSensor {
+      boundingObject Group {
+      }
+    }
   ]
-  boundingObject Group {
-  }
   locked TRUE
   controller "contest_manager"
   supervisor TRUE

@@ -195,267 +195,269 @@ Robot {
     Emitter {
       channel 1024
     }
+    TouchSensor {
+      boundingObject Group {
+        children [
+          Transform {
+            translation -3.5 -3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 3.5 -3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -3.5 3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 3.5 3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -1.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 1.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -1.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 1.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 -1.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 -1.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 1.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 1.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -2.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 2.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -2.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 2.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 -2.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 -2.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 2.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 2.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -3.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -3.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 3.5 -0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 3.5 0.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 -3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 -3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation -0.5 3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+          Transform {
+            translation 0.5 3.5 0.2
+            children [
+              Box {
+                size 1 1 0.4
+              }
+            ]
+          }
+        ]
+      }
+    }
   ]
-  boundingObject Group {
-    children [
-      Transform {
-        translation -3.5 -3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 3.5 -3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -3.5 3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 3.5 3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -1.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 1.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -1.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 1.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 -1.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 -1.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 1.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 1.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -2.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 2.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -2.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 2.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 -2.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 -2.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 2.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 2.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -3.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -3.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 3.5 -0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 3.5 0.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 -3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 -3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation -0.5 3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-      Transform {
-        translation 0.5 3.5 0.2
-        children [
-          Box {
-            size 1 1 0.4
-          }
-        ]
-      }
-    ]
-  }
   locked TRUE
   controller "contest_manager"
   supervisor TRUE
