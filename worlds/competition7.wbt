@@ -462,3 +462,153 @@ Robot {
   controller "contest_manager"
   supervisor TRUE
 }
+DEF POI_1 Transform {
+  translation 1.5 -1.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_2 Transform {
+  translation -1.5 1.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_3 Transform {
+  translation 1.5 1.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_4 Transform {
+  translation -1.5 -1.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_5 Transform {
+  translation 4.5 4.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_6 Transform {
+  translation 4.5 -4.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_7 Transform {
+  translation -4.5 4.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_8 Transform {
+  translation 0.5 4.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_9 Transform {
+  translation 4.5 0.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
+DEF POI_F Transform {
+  translation -2.5 -2.5 0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+}
