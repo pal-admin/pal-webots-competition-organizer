@@ -1,1 +1,2 @@
-
+https://github.com/pal-admin/pal-webots-competition-participant-template
+https://github.com/pal-admin/pal-webots-competition-participant-template
