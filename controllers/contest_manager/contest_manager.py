@@ -67,8 +67,13 @@ while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
     point_value += final_points
     label += 'Final position: ' + str(final_points) + '\n'
     label += 'Total points: ' + str(point_value) + '\n'
+    label += 'Time spent: ' + str(SPENT_TIME) + '\n'
     points = point_value
     referee.setLabel(1, label, 0.15, 0.55, 0.05, 16777215, 0)
+
+    if points == 120:
+        points += max(0, MAXIMUM_TIME - SPENT_TIME)/100
+        break
 
 # Store the results
 with open('/tmp/results.txt', 'w') as f:
