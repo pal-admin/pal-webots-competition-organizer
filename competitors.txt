@@ -1,1 +1,3 @@
-https://github.com/roboticslab-uc3m/iros2021challenge_placeholder
+https://github.com/felsager/participant_controller
+https://github.com/kumarswami/participant_controller
+https://github.com/thisisjaskaran/participant_controller
