@@ -10,6 +10,6 @@ https://github.com/halil93ibrahim/participant_controller
 https://github.com/shikhar2624/participant_controller
 https://github.com/shikhar2624/participant_controller
 https://github.com/shikhar2624/participant_controller
-https://github.com/ShrinivasSK/IROS-Webots
-https://github.com/ShrinivasSK/IROS-Webots
-https://github.com/ShrinivasSK/IROS-Webots
+https://github.com/ShrinivasSK/participant_controller
+https://github.com/ShrinivasSK/participant_controller
+https://github.com/ShrinivasSK/participant_controller
