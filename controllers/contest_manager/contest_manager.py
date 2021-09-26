@@ -51,7 +51,7 @@ while referee.step(timestep) != -1 and SPENT_TIME < MAXIMUM_TIME:
 
     poi_string_list = robot_node.getField('customData').getSFString().split()
     if len(poi_string_list) != 22:
-        print('warning: manager/supervisor is expecting for ee coords. Please review your participant_controller')
+        print('warning: manager/supervisor is expecting gps_ee coords. Please review your `participant_controller`.')
         continue
     ee_x = float(poi_string_list[20])
     ee_y = float(poi_string_list[21])
