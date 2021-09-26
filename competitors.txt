@@ -1,15 +1,1 @@
-https://github.com/kumarswami/participant_controller
-https://github.com/kumarswami/participant_controller
-https://github.com/kumarswami/participant_controller
-https://github.com/thisisjaskaran/participant_controller
-https://github.com/thisisjaskaran/participant_controller
-https://github.com/thisisjaskaran/participant_controller
-https://github.com/halil93ibrahim/participant_controller
-https://github.com/halil93ibrahim/participant_controller
-https://github.com/halil93ibrahim/participant_controller
-https://github.com/shikhar2624/participant_controller
-https://github.com/shikhar2624/participant_controller
-https://github.com/shikhar2624/participant_controller
-https://github.com/ShrinivasSK/participant_controller
-https://github.com/ShrinivasSK/participant_controller
-https://github.com/ShrinivasSK/participant_controller
+https://github.com/roboticslab-uc3m/iros2021challenge-controller-py
