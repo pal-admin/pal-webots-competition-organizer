@@ -146,10 +146,6 @@ DEF PARTICIPANT_ROBOT TiagoSteelMod {
   rotation 1 0 0 0
   controller "participant_controller"
   customData "-0.5 4.5 4.5 -2.5 3.5 3.5 -0.5 -0.5 -3.5 1.5 -0.5 -3.5 -3.5 -0.5 -2.5 -3.5 3.5 4.5 4.5 3.5"
-  bodySlot [
-    GPS {
-    }
-  ]
   lidarSlot [
     HokuyoUrg04lxug01 {
     }
