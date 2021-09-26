@@ -91,15 +91,11 @@ WoodenBox {
   name "wooden box(15)"
   size 1 1 0.4
 }
-DEF PARTICIPANT_ROBOT TiagoBase {
+DEF PARTICIPANT_ROBOT TiagoSteelMod {
   translation -4.5 -4.5 0.095
   rotation 1 0 0 0
   controller "participant_controller"
   customData "4.5 -4.5 -4.5 4.5 -3.5 -3.5 0.5 -2.5 2.5 -0.5 -0.5 2.5 -2.5 0.5 2.5 4.5 4.5 2.5 3.5 3.5"
-  bodySlot [
-    GPS {
-    }
-  ]
   lidarSlot [
     HokuyoUrg04lxug01 {
     }
@@ -241,6 +237,11 @@ Robot {
   controller "contest_manager"
   supervisor TRUE
 }
+WoodenBox {
+  translation 4.5 -4.5 0.2
+  name "wooden box(P1)"
+  size 1 1 0.4
+}
 DEF POI_1 Transform {
   translation 4.5 -4.5 0.5
   children [
@@ -255,6 +256,11 @@ DEF POI_1 Transform {
       }
     }
   ]
+}
+WoodenBox {
+  translation -4.5 4.5 0.2
+  name "wooden box(P2)"
+  size 1 1 0.4
 }
 DEF POI_2 Transform {
   translation -4.5 4.5 0.5
@@ -271,6 +277,11 @@ DEF POI_2 Transform {
     }
   ]
 }
+WoodenBox {
+  translation -3.5 -3.5 0.2
+  name "wooden box(P3)"
+  size 1 1 0.4
+}
 DEF POI_3 Transform {
   translation -3.5 -3.5 0.5
   children [
@@ -285,6 +296,11 @@ DEF POI_3 Transform {
       }
     }
   ]
+}
+WoodenBox {
+  translation 0.5 -2.5 0.2
+  name "wooden box(P4)"
+  size 1 1 0.4
 }
 DEF POI_4 Transform {
   translation 0.5 -2.5 0.5
@@ -330,6 +346,11 @@ DEF POI_6 Transform {
       }
     }
   ]
+}
+WoodenBox {
+  translation -2.5 0.5 0.2
+  name "wooden box(P7)"
+  size 1 1 0.4
 }
 DEF POI_7 Transform {
   translation -2.5 0.5 0.5
