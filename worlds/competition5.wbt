@@ -494,6 +494,11 @@ DEF POI_5 Transform {
     }
   ]
 }
+WoodenBox {
+  translation 2.5 -2.5 0.2
+  name "wooden box(P6)"
+  size 1 1 0.4
+}
 DEF POI_6 Transform {
   translation 2.5 -2.5 0.5
   children [
@@ -508,6 +513,11 @@ DEF POI_6 Transform {
       }
     }
   ]
+}
+WoodenBox {
+  translation -2.5 2.5 0.2
+  name "wooden box(P7)"
+  size 1 1 0.4
 }
 DEF POI_7 Transform {
   translation -2.5 2.5 0.5
@@ -524,6 +534,11 @@ DEF POI_7 Transform {
     }
   ]
 }
+WoodenBox {
+  translation -1.5 0.5 0.2
+  name "wooden box(P8)"
+  size 1 1 0.4
+}
 DEF POI_8 Transform {
   translation -1.5 0.5 0.5
   children [
@@ -539,6 +554,11 @@ DEF POI_8 Transform {
     }
   ]
 }
+WoodenBox {
+  translation 0.5 -1.5 0.2
+  name "wooden box(P9)"
+  size 1 1 0.4
+}
 DEF POI_9 Transform {
   translation 0.5 -1.5 0.5
   children [
@@ -553,6 +573,11 @@ DEF POI_9 Transform {
       }
     }
   ]
+}
+WoodenBox {
+  translation 1.5 1.5 0.2
+  name "wooden box(PF)"
+  size 1 1 0.4
 }
 DEF POI_F Transform {
   translation 1.5 1.5 0.5
