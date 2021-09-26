@@ -16,7 +16,7 @@ RectangleArena {
   floorTileSize 2 2
   wallHeight 0.3
 }
-DEF PARTICIPANT_ROBOT TiagoBase {
+DEF PARTICIPANT_ROBOT TiagoSteelMod {
   translation -4.5 -4.5 0.095
   rotation 1 0 0 0
   controller "participant_controller"
