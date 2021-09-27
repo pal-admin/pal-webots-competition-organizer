@@ -170,6 +170,12 @@ DEF PARTICIPANT_ROBOT TiagoSteelMod {
     HokuyoUrg04lxug01 {
     }
   ]
+  lidarTiltSlot [
+    HokuyoUrg04lxug01 {
+      rotation 1 0 0 0.13
+      name "lidar_tilt"
+    }
+  ]
 }
 Robot {
   children [
