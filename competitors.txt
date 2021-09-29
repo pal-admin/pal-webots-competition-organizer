@@ -1,1 +1,1 @@
-https://github.com/roboticslab-uc3m/iros2021challenge-controller-py
+https://github.com/thisisjaskaran/participant_controller
