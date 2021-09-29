@@ -220,16 +220,6 @@ Robot {
     }
     TouchSensor {
       boundingObject Group {
-        children [
-          Transform {
-            translation -4.5 -3.5 0.2
-            children [
-              Box {
-                size 1 1 0.4
-              }
-            ]
-          }
-        ]
       }
     }
   ]
